@@ -1,0 +1,133 @@
+/* global css start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  margin: 0; 
+  padding: 0; 
+}  
+li { 
+  list-style-type: none; 
+} 
+a { 
+  text-decoration: none; 
+}
+.container {
+  width: 1140px;
+}
+.thumbnail {
+  position: relative;
+  padding: 0 !important;
+}
+.box {
+  z-index: -1;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #ffce29;
+  bottom: -25px;
+  left: -25px;
+}
+.icon {
+  position: absolute;
+  bottom: 46%;
+  left: 45%;
+  height: 80px;
+  width: 80px;
+  padding: 0 !important;
+  z-index: 3;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 206, 41, 0.4) !important;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+.icon i {
+  font-size: 80px;
+  background-color: #ffce29;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  line-height: 80px;
+  text-align: center;
+  padding: 0 !important;
+}
+/* header section css */
+header {
+  background-color: #ffce29;
+}
+.bg-light {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.nav-item {
+  margin: 0 10px
+}
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 24px;
+}
+.input-group {
+  width: 30% !important;
+}
+.form-control {
+  background-color: #ffce29 !important;
+}
+.input-group-text {
+  background-color: #00bec9 !important;
+}
+.input-group-text i {
+    color: white !important;
+}
+.form-control,
+.input-group-text {
+  font-size: 18px;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+.form-control::placeholder {
+  color: white;
+}
+/* banner section css */
+.banner {
+  padding: 80px 0;
+  background-color: #ffce29;
+}
+.banner h1 {
+  font-size: 63px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.banner p {
+  color: #ffffff;
+  font-size: 29px;
+}
+.banner .btn-primary {
+  background-color: #00bec9 !important;
+  border-color: #00bec9;
+}
+/* vid section css  */
+.vid1 {
+  padding: 120px 0;
+}
+.vid1 h3 {
+  font-size: 50px;
+  color: #313243;
+  font-weight: 600;
+}
+.vid1 p {
+  font-size: 29px;
+  color: #313243;
+  font-weight: 400;
+}
+.vid1 button {
+  background-color: #00bec9;
+  color: white;
+  border-color: #00bec9 !important;
+}
