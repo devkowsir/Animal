@@ -131,3 +131,30 @@ header {
   color: white;
   border-color: #00bec9 !important;
 }
+/* doctor section css */
+.doc {
+  background-color: #ffce29;
+  padding: 80px 0;
+  text-align: center;
+  color: #ffffff;
+}
+.doc h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+.doc > .container > p {
+  width: 60%;
+  margin-inline: auto;
+  font-size: 33px;
+}
+.doc .col-md-4 {
+  margin-top: 50px;
+  width: 31%;
+}
+.doc .col-md-4 h4 {
+  font-size: 33px;
+  margin-block: 20px;
+}
+.doc .col-md-4 p {
+  font-size: 21px;
+}
