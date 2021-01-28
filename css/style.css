@@ -330,11 +330,13 @@ footer ul {
 footer h2 {
   color: #ffffff;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 footer .col-md-3 a {
     color: #d5d5dd;
 }
 footer p {
+  font-size: 21px;
   color: #d5d5dd;
 }
 footer .col-md-3 li {
@@ -346,8 +348,11 @@ footer .col-md-3 li a {
 footer .col-md-6 {
   text-align: right;
 }
-footer .col-md-6 input {
-  height: 70px;
+footer h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff !important;
+  margin-bottom: 20px;
 }
 .msg {
   display: flex;
