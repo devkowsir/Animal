@@ -1,4 +1,6 @@
-/* global css start */
+/* --------------------------------------------------------------------------------------------- */
+/* global css section */
+/* --------------------------------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
 body {
   font-family: 'Poppins', sans-serif;
@@ -13,53 +15,15 @@ li {
 a { 
   text-decoration: none; 
 }
-.container {
-  width: 1140px;
-}
-.thumbnail {
-  position: relative;
-  padding: 0 !important;
-}
-.box {
-  z-index: -1;
-  position: absolute;
-  width: 200px;
-  height: 200px;
+.bg-yellow {
   background-color: #ffce29;
-  bottom: -25px;
-  left: -25px;
 }
-.icon {
-  position: absolute;
-  bottom: 46%;
-  left: 45%;
-  height: 80px;
-  width: 80px;
-  padding: 0 !important;
-  z-index: 3;
+input:focus {
+  background-color: #ffce29 !important;
 }
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 206, 41, 0.4) !important;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-}
-.icon i {
-  font-size: 80px;
-  background-color: #ffce29;
-  color: white;
-  border-radius: 50%;
-  border: 1px solid white;
-  line-height: 80px;
-  text-align: center;
-  padding: 0 !important;
-}
+/* --------------------------------------------------------------------------------------------- */
 /* header section css */
-header {
-  background-color: #ffce29;
-}
+/* --------------------------------------------------------------------------------------------- */
 .bg-light {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
@@ -71,11 +35,8 @@ header {
   font-weight: 500;
   font-size: 24px;
 }
-.input-group {
+header .input-group {
   width: 30% !important;
-}
-.form-control {
-  background-color: #ffce29 !important;
 }
 .input-group-text {
   background-color: #00bec9 !important;
@@ -93,10 +54,11 @@ header {
 .form-control::placeholder {
   color: white;
 }
+/* --------------------------------------------------------------------------------------------- */
 /* banner section css */
+/* --------------------------------------------------------------------------------------------- */
 .banner {
   padding: 80px 0;
-  background-color: #ffce29;
 }
 .banner h1 {
   font-size: 63px;
@@ -112,49 +74,313 @@ header {
   background-color: #00bec9 !important;
   border-color: #00bec9;
 }
-/* vid section css  */
-.vid1 {
+/* --------------------------------------------------------------------------------------------- */
+/* video 1st and 2nd section css  */
+/* --------------------------------------------------------------------------------------------- */
+.video {
   padding: 120px 0;
 }
-.vid1 h3 {
+.video h3 {
   font-size: 50px;
   color: #313243;
   font-weight: 600;
 }
-.vid1 p {
+.video p {
   font-size: 29px;
   color: #313243;
   font-weight: 400;
 }
-.vid1 button {
-  background-color: #00bec9;
+.video button {
   color: white;
-  border-color: #00bec9 !important;
+  border-color: #ffce29 !important;
+  margin-top: 20px;
 }
-/* doctor section css */
-.doc {
+.video2 {
+  text-align: right;
+}
+.video1 .box {
+  left: -25px;
+}
+.video2 .box {
+  right: -25px;
+}
+.video1 .icon i {
+  margin-left: 5px;
+}
+.video2 .icon i {
+  transform: rotate(180deg);
+  margin-right: 5px;
+}
+.thumbnail {
+  position: relative;
+  padding: 0 !important;
+}
+.box {
+  z-index: -1;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -25px;
   background-color: #ffce29;
+}
+.icon {
+  position: absolute;
+  bottom: 46%;
+  left: 45%;
+  z-index: 3;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+}
+.icon i {
+  font-size: 32px;
+  color: #ffce29;
+  line-height: 80px;
+  padding: 0 !important;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 206, 41, 0.5) !important;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* service section css */
+/* --------------------------------------------------------------------------------------------- */
+.service {
   padding: 80px 0;
   text-align: center;
   color: #ffffff;
 }
-.doc h1 {
+.title {
   font-size: 65px;
   font-weight: 700;
 }
-.doc > .container > p {
-  width: 60%;
+.service > .container > p {
+  width: min(800px,100%);
   margin-inline: auto;
   font-size: 33px;
 }
-.doc .col-md-4 {
+.service .col-md-4 {
   margin-top: 50px;
   width: 31%;
 }
-.doc .col-md-4 h4 {
+.service .col-md-4 h4 {
   font-size: 33px;
   margin-block: 20px;
 }
-.doc .col-md-4 p {
+.service .col-md-4 p {
   font-size: 21px;
+}
+/* pricing section css */
+.pricing {
+  padding: 80px 0;
+  color: white;
+}
+.pricing p {
+  font-size: 30px;
+  width: min(600px, 100%);
+  margin: 40px auto;
+}
+.pricing button {
+  border-radius: 40px;
+  background-color: #00bec9;
+  border-color: #00bec9;
+}
+.pricing h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 600;
+  font-size: 36px;
+}
+.pricing h3 span {
+  margin-right: 40px;
+}
+.pricing .del::before {
+  content: '';
+  position: absolute;
+  top: 38px;
+  left: 70px;
+  display: inline-block;
+  height: 4px;
+  width: 110px;
+  background-color: white;
+}
+.pricing button {
+  padding-inline: 2rem;
+  font-weight: 600;
+}
+/* social section css */
+.team {
+  padding: 80px 0;
+}
+.team > .container > p {
+  width: min(700px, 100%);
+  margin: 40px auto;
+  font-size: 33px;
+}
+.team .row h4 {
+  letter-spacing: 1px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.team .row p {
+  font-size: 21px;
+}
+.team .row ul {
+  padding-left: 0 !important;
+}
+.team .row li a i {
+  font-size: 18px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #ffce29;
+  color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/* counter section css */
+.counter {
+  text-align: center;
+  padding: 120px 0;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+  height: 500px;
+}
+.counter::before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 206, 41, 0.6) ;
+}
+.counter h4 {
+  position: relative;
+  z-index: 2;
+}
+.counter h4 i {
+  font-size: 80px;
+}
+.counter h4 {
+  font-size: 34px;
+  margin: 20px 0;
+}
+.counter h4:nth-child(3) {
+  font-weight: 700;
+}
+/* post section css */
+.post {
+  padding: 80px 0;
+}
+.post img {
+  position: relative;
+  z-index: 1;
+}
+.post .container > p {
+  font-size: 30px;
+  width: min(600px, 100%);
+  margin: 30px auto 60px auto;
+}
+.post .post-details {
+  padding: 20px;
+  border: 2px solid #d5d5dd;
+  border-top: none;
+  transition: border-color 0.2s ease-in-out;
+}
+.post .each {
+  transition: box-shadow .2s ease-in-out;
+}
+.post .each:hover {
+  box-shadow: 0 5px 15px 0 #d5d5dd;
+}
+.post .each:hover > .post-details {
+  border-color: #ffffff;
+}
+.post-details p:nth-child(3) {
+  margin: 30px auto;
+}
+.post-details a,
+.post-details p:nth-child(2) {
+  color: #00bec9;
+}
+/* footer section css */
+footer {
+  padding: 80px;
+  background-color: #343434;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+footer .col-md-3 a {
+    color: #d5d5dd;
+}
+footer p {
+  color: #d5d5dd;
+}
+footer .col-md-3 li {
+  margin-top: 10px;
+}
+footer .col-md-3 li a {
+  font-size: 21px;
+}
+footer .col-md-6 {
+  text-align: right;
+}
+footer .col-md-6 input {
+  height: 70px;
+}
+.msg {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+}
+.msg textarea {
+  display: block;
+  width: 78%;
+  height: 100px;
+  padding: 0.5rem 0.5rem;
+  background-color: #ffce29;
+  border: none;
+}
+.msg button {
+  width: 20%;
+  height: 100px;
+  display: block;
+  background-color: #00bec9;
+  border: none;
+  outline: none;
+}
+footer .col-md-6 li {
+  display: inline-block;
+}
+footer .col-md-6 li a i {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  margin-left: 10px;
 }
